@@ -38,6 +38,42 @@ body
     transform: translate(-50%,-50%);
 }
 
+#middle-content-left-side-container
+{
+    float: left;
+    width: 25%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#middle-content-container h1
+{
+    font-size: 5em;
+    margin: 0;
+}
+
+#middle-content-container p
+{
+    font-size: 2em;
+    margin: 0;
+}
+
+#middle-content-middle-container
+{
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    float: left;
+}
+
+#middle-content-right-side-container
+{
+    float: right;
+    width: 25%;
+    height: 100%;
+}
+
 #image-gallery-container-top
 {
     z-index: 1;
