@@ -5,9 +5,9 @@
 $font-normal: 'Roboto', sans-serif;
 
 //variables
-$primary-color: #456;
+$primary-color: #F0F0F0;
 $primary-color-accent: #567; 
-$secondary-color: #987;
+$secondary-color: #0F0F0F;
 $secondary-color-accent: #789;
 
 body
@@ -31,7 +31,6 @@ body
     position: relative;
     width: 100%;
     height: 33.3%;
-    background-color: $primary-color;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -43,28 +42,48 @@ body
     float: left;
     width: 25%;
     height: 100%;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    background-color: $primary-color;
+}
+
+#middle-content-left-side-container p
+{
+    font-size: 4vw;
+    color: $secondary-color;
 }
 
 #middle-content-container h1
 {
-    font-size: 5em;
-    margin: 0;
+    position: absolute;
+    font-size: 4vw;
+    left: 0;
+    top: 0;
+    margin: auto;
+    color: $secondary-color;
 }
 
-#middle-content-container p
+#middle-content-container h4
 {
-    font-size: 2em;
-    margin: 0;
+    position: absolute;
+    font-size: 4vw;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    color: $primary-color;
 }
 
 #middle-content-middle-container
 {
+    position: relative;
     width: 50%;
     height: 100%;
     margin: 0 auto;
-    text-align: center;
     float: left;
+    background-image: url(/images/black_white_shoes03.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #middle-content-right-side-container
@@ -72,6 +91,16 @@ body
     float: right;
     width: 25%;
     height: 100%;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    background-color: $secondary-color;
+}
+
+#middle-content-right-side-container p
+{
+    font-size: 4vw;
+    color: $primary-color;
 }
 
 #image-gallery-container-top
