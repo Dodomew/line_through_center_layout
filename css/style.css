@@ -14,20 +14,24 @@ body {
 
 /* line 28, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-container {
+  position: absolute;
   z-index: 100;
-  position: relative;
-  width: 100%;
+  width: 100vw;
+  min-width: 100vw;
   height: 33.3%;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  top: 33.3%;
+  left: 0;
+  /*position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);*/ }
 
-/* line 40, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 43, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-left-side-container {
   float: left;
   width: 25%;
   height: 100%;
+  left: 0;
   display: flex;
   justify-content: center;
   /* align horizontal */
@@ -35,12 +39,12 @@ body {
   /* align vertical */
   background-color: #F0F0F0; }
 
-/* line 51, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 55, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-left-side-container p {
   font-size: 4vw;
   color: #0F0F0F; }
 
-/* line 57, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 61, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-container h1 {
   position: absolute;
   font-size: 4vw;
@@ -49,7 +53,7 @@ body {
   margin: auto;
   color: #0F0F0F; }
 
-/* line 67, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 71, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-container h4 {
   position: absolute;
   font-size: 4vw;
@@ -58,7 +62,7 @@ body {
   margin: auto;
   color: #F0F0F0; }
 
-/* line 77, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 81, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-middle-container {
   position: relative;
   width: 50%;
@@ -69,11 +73,12 @@ body {
   background-size: cover;
   background-position: center; }
 
-/* line 89, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 93, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-right-side-container {
   float: right;
   width: 25%;
   height: 100%;
+  right: 0;
   display: flex;
   justify-content: center;
   /* align horizontal */
@@ -81,19 +86,20 @@ body {
   /* align vertical */
   background-color: #0F0F0F; }
 
-/* line 100, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 105, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-right-side-container p {
   font-size: 4vw;
   color: #F0F0F0; }
 
-/* line 106, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 111, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-gallery-container-top {
   z-index: 1;
   width: 100%;
   height: 35%;
+  top: 0;
   background-color: #0F0F0F; }
 
-/* line 116, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 122, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .image-clip-container {
   width: 25%;
   height: 100%;
@@ -102,13 +108,13 @@ body {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   margin-left: -12.5%; }
 
-/* line 126, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 132, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .image-clip-container img {
-  width: 100%;
+  width: auto;
   height: 100%;
   margin: auto; }
 
-/* line 133, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 139, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-clip-rightend {
   position: absolute;
   width: 25%;
@@ -117,13 +123,13 @@ body {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   right: -12.5%; }
 
-/* line 143, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 149, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-clip-rightend img {
   width: 100%;
   height: 100%;
   margin: auto; }
 
-/* line 151, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 157, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-gallery-container-bot {
   z-index: 1;
   width: 100%;
@@ -132,7 +138,7 @@ body {
   position: absolute;
   bottom: 0; }
 
-/* line 161, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 167, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-clip-rightend-bot {
   position: absolute;
   width: 25%;
@@ -142,24 +148,27 @@ body {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   right: -12.5%; }
 
-/* line 172, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 178, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-clip-rightend-bot img {
   width: 100%;
   height: 100%;
   margin: auto; }
 
 @media (max-width: 480px) {
-  /* line 181, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 187, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .image-clip-container {
     width: 50%;
     margin-left: -25%; }
-  /* line 187, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 193, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #image-clip-rightend {
     width: 50%;
     right: -25%; }
-  /* line 193, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 199, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #image-clip-rightend-bot {
     width: 50%;
-    right: -25%; } }
+    right: -25%; }
+  /* line 205, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  #image-gallery-container-top:nth-child(5n) {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
