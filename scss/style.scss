@@ -29,13 +29,10 @@ body
 
 #middle-content-container
 {
-    position: absolute;
+    position: relative;
     z-index: 100;
-    width: 100vw;
-    min-width: 100vw;
-    height: 33.3%;
-    top: 33.3%;
-    left: 0;
+    height: 34%;
+    width: 100%;
     font-family: $font-head;
     /*position: fixed;
     top: 50%;
@@ -48,16 +45,15 @@ body
     float: left;
     width: 25%;
     height: 100%;
-    left: 0;
-    display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
     background-color: $primary-color;
 }
 
 #middle-content-left-side-container p
 {
-    font-size: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
     color: $secondary-color;
 }
 
@@ -95,19 +91,18 @@ body
 
 #middle-content-right-side-container
 {
-    float: right;
+    float: left;
     width: 25%;
     height: 100%;
-    right: 0;
-    display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
     background-color: $secondary-color;
 }
 
 #middle-content-right-side-container p
 {
-    font-size: 4vw;
+    margin-top: 25%;
+    font-size: 30px;
+    font-size: 3.5vw;
+    text-align: center;
     color: $primary-color;
 }
 
@@ -115,11 +110,8 @@ body
 {
     z-index: 1;
     width: 100%;
-    height: 35%;
-    top: 0;
+    height: 33.3%;
     background-color: $secondary-color;
-    //position: absolute; use this for mobile response in chrome inspector
-    //top: 0
 }
 
 .image-clip-container
@@ -129,21 +121,30 @@ body
     float: left;
     -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-    margin-left: -25%;
+     margin-left: -25%;
 }
 
 .image-clip-container img
 {
+    min-height: 100%;
+    width: auto;
+}
+
+#image-gallery-container-bot
+{
+    z-index: 1;
     width: 100%;
-    height: auto;
-    margin: auto;
+    height: 33.3%;
+    background-color: $secondary-color;
+    position: absolute;
+    bottom: 0;
 }
 
 #image-clip-rightend
 {
     position: absolute;
     width: 25%;
-    height: 35%;
+    height: 33.3%;
     -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     right: -12.5%;
@@ -152,19 +153,8 @@ body
 #image-clip-rightend img
 {
     width: auto;
-    height: 100%;
+    max-height: 100%;
     margin: auto;
-}
-
-
-#image-gallery-container-bot
-{
-    z-index: 1;
-    width: 100%;
-    height: 35%;
-    background-color: $secondary-color;
-    position: absolute;
-    bottom: 0;
 }
 
 #image-clip-rightend-bot
@@ -181,6 +171,15 @@ body
 #image-clip-rightend-bot img
 {
     width: auto;
-    height: 100%;
+    max-height: 100%;
     margin: auto;
+}
+
+@media screen and (min-width: 1024px)
+{
+    .image-clip-container img
+    {
+        max-width: 100%;
+        height: auto;
+    }    
 }
