@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 @import url(https://fonts.googleapis.com/css?family=Anton);
-/* line 15, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 15, Z:/Sites/web designs/fake_product02/scss/style.scss */
 body {
   width: 100vw;
   height: 100vh;
@@ -8,28 +8,31 @@ body {
   overflow: hidden;
   font-family: "Roboto", sans-serif; }
 
-/* line 24, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 24, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #content-container {
   width: 100%;
   height: 100%; }
 
-/* line 30, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 30, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-container {
   position: relative;
   z-index: 100;
-  height: 40%;
+  height: 34%;
   width: 100%;
   font-family: "Anton", sans-serif;
-  clear: both; }
+  /*position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);*/ }
 
-/* line 40, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 43, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-left-side-container {
   float: left;
   width: 25%;
   height: 100%;
   background-color: #F0F0F0; }
 
-/* line 48, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 51, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-left-side-container p {
   display: flex;
   align-items: center;
@@ -37,7 +40,7 @@ body {
   font-size: 5vw;
   color: #0F0F0F; }
 
-/* line 57, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 60, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-container h1 {
   position: absolute;
   font-size: 4vw;
@@ -46,7 +49,7 @@ body {
   margin: auto;
   color: #0F0F0F; }
 
-/* line 67, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 70, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-container h4 {
   position: absolute;
   font-size: 4vw;
@@ -55,26 +58,25 @@ body {
   margin: auto;
   color: #F0F0F0; }
 
-/* line 77, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 80, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-middle-container {
   position: relative;
   width: 50%;
   height: 100%;
   margin: 0 auto;
   float: left;
-  background-image: url(/images/minified_1024/black_white_shoes03_min1024.jpg);
+  background-image: url(/images/black_white_shoes03.jpg);
   background-size: cover;
   background-position: center; }
 
-/* line 89, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 92, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-right-side-container {
-  position: relative;
   float: left;
   width: 25%;
   height: 100%;
   background-color: #0F0F0F; }
 
-/* line 98, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 100, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-right-side-container p {
   margin-top: 25%;
   font-size: 30px;
@@ -82,64 +84,63 @@ body {
   text-align: center;
   color: #F0F0F0; }
 
-/* line 107, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 109, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-gallery-container-top {
   z-index: 1;
   width: 100%;
-  height: 30%;
+  height: 33.3%;
   background-color: #0F0F0F; }
 
-/* line 115, C:/Doortje sites/line_through_center_layout/scss/style.scss */
-#image-gallery-container-top .image-clip-container {
-  margin-left: -25%; }
+/* line 117, Z:/Sites/web designs/fake_product02/scss/style.scss */
+.full-screen-image-container {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  display: none; }
 
-/* line 120, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 125, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .image-clip-container {
+  display: block;
   width: 50%;
   height: 100%;
   float: left;
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); }
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  margin-left: -25%; }
 
-/* line 129, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 136, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .image-clip-container img {
-  min-height: 100%;
-  width: auto;
-  margin: auto;
-  overflow: hidden; }
+  max-width: 100%;
+  height: auto; }
 
-/* line 137, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 142, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-gallery-container-bot {
   z-index: 1;
   width: 100%;
-  height: 30%;
-  background-color: #F0F0F0;
+  height: 33.3%;
+  background-color: #0F0F0F;
   position: absolute;
   bottom: 0; }
 
-/* line 147, C:/Doortje sites/line_through_center_layout/scss/style.scss */
-#image-gallery-container-bot .image-clip-container {
-  margin-left: 0;
-  margin-right: -25%; }
-
-/* line 153, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 152, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-clip-rightend {
+  display: block;
   position: absolute;
-  overflow: hidden;
-  width: 50%;
+  width: 25%;
   height: 33.3%;
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  right: -25%; }
+  right: -12.5%; }
 
-/* line 164, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 163, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-clip-rightend img {
   width: auto;
-  min-height: 100%;
+  max-height: 100%;
   margin: auto; }
 
-/* line 171, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 170, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-clip-rightend-bot {
+  display: block;
   position: absolute;
   width: 25%;
   height: 100%;
@@ -148,22 +149,24 @@ body {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   right: -12.5%; }
 
-/* line 182, C:/Doortje sites/line_through_center_layout/scss/style.scss */
+/* line 182, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-clip-rightend-bot img {
   width: auto;
   max-height: 100%;
   margin: auto; }
 
-@media screen and (min-width: 1024px) {
-  /* line 191, C:/Doortje sites/line_through_center_layout/scss/style.scss */
-  .image-clip-container img {
-    max-width: 100%;
-    height: auto; } }
-
-@media screen and (min-width: 720px) {
-  /* line 200, C:/Doortje sites/line_through_center_layout/scss/style.scss */
-  .image-clip-container img {
-    max-width: 100%;
-    height: auto; } }
+@media screen and (max-width: 1080px) {
+  /* line 191, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  .full-screen-image-container {
+    display: block; }
+  /* line 196, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  .image-clip-container {
+    display: none; }
+  /* line 201, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  #image-clip-rightend {
+    display: none; }
+  /* line 206, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  #image-clip-rightend-bot {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
