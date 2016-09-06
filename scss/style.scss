@@ -12,7 +12,7 @@ $primary-color-accent: #567;
 $secondary-color: #0F0F0F;
 $secondary-color-accent: #789;
 
-body
+html, body
 {
     width: 100vw;
     height: 100vh;
@@ -21,7 +21,7 @@ body
     font-family: $font-normal;
 }
 
-#content-container
+.content-container
 {
     width: 100%; 
     height: 100%;
@@ -186,6 +186,98 @@ body
     width: auto;
     max-height: 100%;
     margin: auto;
+}
+
+#body-shop
+{
+    background: linear-gradient(to right, $primary-color 0%, $primary-color 50%, $secondary-color 50%, $secondary-color 100%);
+}
+
+#content-container-shop
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#title-container
+{
+    position: relative;
+    height: 25vh;
+    width: 100vw;
+    margin: auto;
+}
+#content-shop-title-absolute-left
+{
+    width: 50vw;
+    height: 25vh;
+    text-align: right;
+    position: absolute;
+    top: 0;
+}
+
+#content-shop-title-absolute-left h1
+{
+    font-size: 10vh;
+    color: $secondary-color;
+}
+
+#content-shop-title-absolute-right
+{
+    width: 50vw;
+    height: 25vh;
+    margin-left: 50%;
+    text-align: left;
+    position: absolute;
+    top: 0;
+}
+
+#content-shop-title-absolute-right h1
+{
+    font-size: 10vh;
+    color: $primary-color;
+}
+
+#content-shop-image-gallery-left
+{
+    width: 50vw;
+    height: 50vw;
+    position: relative;
+    background-color: $secondary-color;  
+    float: left;
+}
+
+.shop-image-gallery-center
+{
+    width: 50vw;
+    height: 50vw;
+    margin: 0 auto;
+}
+
+#content-shop-image-gallery-right
+{
+    width: 50vw;
+    height: 50vw;
+    position: relative;
+    background-color: $primary-color; 
+    float: right;
+}
+
+.shop-image-gallery-container
+{
+    width: 45vw;
+    height: 30vw;
+    display: block;
+    overflow: hidden;  
+    padding: 2.5vw;
+}
+
+.shop-image-gallery-container img
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 1080px)

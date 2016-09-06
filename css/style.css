@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 @import url(https://fonts.googleapis.com/css?family=Anton);
 /* line 15, Z:/Sites/web designs/fake_product02/scss/style.scss */
-body {
+html, body {
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
@@ -9,7 +9,7 @@ body {
   font-family: "Roboto", sans-serif; }
 
 /* line 24, Z:/Sites/web designs/fake_product02/scss/style.scss */
-#content-container {
+.content-container {
   width: 100%;
   height: 100%; }
 
@@ -157,27 +157,108 @@ body {
   max-height: 100%;
   margin: auto; }
 
+/* line 191, Z:/Sites/web designs/fake_product02/scss/style.scss */
+#body-shop {
+  background: linear-gradient(to right, #F0F0F0 0%, #F0F0F0 50%, #0F0F0F 50%, #0F0F0F 100%); }
+
+/* line 196, Z:/Sites/web designs/fake_product02/scss/style.scss */
+#content-container-shop {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto; }
+
+/* line 203, Z:/Sites/web designs/fake_product02/scss/style.scss */
+#title-container {
+  position: relative;
+  height: 25vh;
+  width: 100vw;
+  margin: auto; }
+
+/* line 210, Z:/Sites/web designs/fake_product02/scss/style.scss */
+#content-shop-title-absolute-left {
+  width: 50vw;
+  height: 25vh;
+  text-align: right;
+  position: absolute;
+  top: 0; }
+
+/* line 219, Z:/Sites/web designs/fake_product02/scss/style.scss */
+#content-shop-title-absolute-left h1 {
+  font-size: 10vh;
+  color: #0F0F0F; }
+
+/* line 225, Z:/Sites/web designs/fake_product02/scss/style.scss */
+#content-shop-title-absolute-right {
+  width: 50vw;
+  height: 25vh;
+  margin-left: 50%;
+  text-align: left;
+  position: absolute;
+  top: 0; }
+
+/* line 235, Z:/Sites/web designs/fake_product02/scss/style.scss */
+#content-shop-title-absolute-right h1 {
+  font-size: 10vh;
+  color: #F0F0F0; }
+
+/* line 241, Z:/Sites/web designs/fake_product02/scss/style.scss */
+#content-shop-image-gallery-left {
+  width: 50vw;
+  height: 50vw;
+  position: relative;
+  background-color: #0F0F0F;
+  float: left; }
+
+/* line 250, Z:/Sites/web designs/fake_product02/scss/style.scss */
+.shop-image-gallery-center {
+  width: 50vw;
+  height: 50vw;
+  margin: 0 auto; }
+
+/* line 257, Z:/Sites/web designs/fake_product02/scss/style.scss */
+#content-shop-image-gallery-right {
+  width: 50vw;
+  height: 50vw;
+  position: relative;
+  background-color: #F0F0F0;
+  float: right; }
+
+/* line 266, Z:/Sites/web designs/fake_product02/scss/style.scss */
+.shop-image-gallery-container {
+  width: 45vw;
+  height: 30vw;
+  display: block;
+  overflow: hidden;
+  padding: 2.5vw; }
+
+/* line 275, Z:/Sites/web designs/fake_product02/scss/style.scss */
+.shop-image-gallery-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0 auto; }
+
 @media screen and (max-width: 1080px) {
-  /* line 193, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 285, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .full-screen-image-container {
     display: block; }
-  /* line 198, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 290, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .image-clip-container {
     display: none; }
-  /* line 203, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 295, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #image-clip-rightend {
     display: none; }
-  /* line 208, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 300, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #image-clip-rightend-bot {
     display: none; }
-  /* line 213, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 305, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #middle-content-container p {
     font-size: 5vh;
     line-height: 22.5vh; }
-  /* line 219, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 311, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #middle-content-middle-container-h1-black h1 {
     font-size: 4vh; }
-  /* line 224, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 316, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #middle-content-middle-container-h1-white h1 {
     font-size: 4vh; } }
 
