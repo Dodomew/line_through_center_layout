@@ -191,12 +191,13 @@ html, body
 #body-shop
 {
     background: linear-gradient(to right, $primary-color 0%, $primary-color 50%, $secondary-color 50%, $secondary-color 100%);
+    overflow-y: auto;
 }
 
 #content-container-shop
 {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -207,6 +208,7 @@ html, body
     width: 100vw;
     margin: auto;
 }
+
 #content-shop-title-absolute-left
 {
     width: 50vw;
@@ -238,44 +240,113 @@ html, body
     color: $primary-color;
 }
 
-#content-shop-image-gallery-left
+.content-shop-image-gallery-black
 {
-    width: 50vw;
-    height: 50vw;
     position: relative;
     background-color: $secondary-color;  
     float: left;
 }
 
-.shop-image-gallery-center
+.content-shop-image-gallery-black-right
 {
-    width: 50vw;
-    height: 50vw;
-    margin: 0 auto;
+    position: relative;
+    background-color: $secondary-color;  
+    float: right;
 }
 
-#content-shop-image-gallery-right
+.content-shop-image-gallery-white
 {
-    width: 50vw;
-    height: 50vw;
     position: relative;
     background-color: $primary-color; 
     float: right;
 }
 
+.content-shop-image-gallery-white-left
+{
+    position: relative;
+    background-color: $primary-color; 
+    float: left;
+}
+
 .shop-image-gallery-container
 {
     width: 45vw;
-    height: 30vw;
+    height: 25vw;
     display: block;
     overflow: hidden;  
     padding: 2.5vw;
 }
 
+.shop-image-text-white
+{
+    text-align: left;
+    width: 35vw;
+    height: auto;
+    margin-top: -2.5vh;
+    margin-left: 2.5vw;
+    color: $primary-color;
+    float: left;
+}
+
+.shop-image-text-black
+{
+    text-align: left;
+    width: 35vw;
+    height: auto;
+    margin-top: -2.5vh;
+    margin-left: 2.5vw;
+    color: $secondary-color;
+    float: left;
+}
+
+.shop-image-icons-container
+{
+    width: auto;
+    height: auto;
+    float: right;
+    margin-right: 2.5vw;
+}
+
+.shop-image-icons-medium-cart-white
+{
+    width: 64px;
+    height: 64px;
+    background-image: url("/images/icons/spritesheet_shopcartIcon_64.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+
+.shop-image-icons-medium-heart-white
+{
+    width: 64px;
+    height: 64px;
+    background-image: url("/images/icons/spritesheet_heartIcon_64.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+
+.shop-image-icons-medium-cart-black
+{
+    width: 64px;
+    height: 64px;
+    background-image: url("/images/icons/spritesheet_shopcartIcon_64.png");
+    background-position: 0px -64px;
+    background-repeat: no-repeat;
+}
+
+.shop-image-icons-medium-heart-black
+{
+    width: 64px;
+    height: 64px;
+    background-image: url("/images/icons/spritesheet_heartIcon_64.png");
+    background-position: 0px -64px;
+    background-repeat: no-repeat;
+}
+
 .shop-image-gallery-container img
 {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
 }
@@ -316,5 +387,49 @@ html, body
     #middle-content-middle-container-h1-white h1
     {
         font-size: 4vh;
+    }
+    
+    .shop-image-text-white
+    {
+        width: 30vw;
+        margin-top: -1vh;
+        font-size: 1vh;
+    }
+
+    .shop-image-text-black
+    {
+        width: 30vw;
+        margin-top: -1vh;
+        font-size: 1vh;
+    }
+    
+    .shop-image-icons-medium-cart-white
+    {
+        width: 32px;
+        height: 32px;
+        background-image: url("/images/icons/spritesheet_shopcartIcon_32.png");
+    }
+
+    .shop-image-icons-medium-heart-white
+    {
+        width: 32px;
+        height: 32px;
+        background-image: url("/images/icons/spritesheet_heartIcon_32.png");
+    }
+
+    .shop-image-icons-medium-cart-black
+    {
+        width: 32px;
+        height: 32px;
+        background-image: url("/images/icons/spritesheet_shopcartIcon_32.png");
+        background-position: 0px -32px;
+    }
+
+    .shop-image-icons-medium-heart-black
+    {
+        width: 32px;
+        height: 32px;
+        background-image: url("/images/icons/spritesheet_heartIcon_32.png");
+        background-position: 0px -32px;
     }
 }
