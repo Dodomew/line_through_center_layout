@@ -40,6 +40,12 @@ html, body
     transform: translate(-50%,-50%);*/
 }
 
+#middle-content-container a
+{
+    list-style-type: none;
+    text-decoration: none;
+}
+
 #middle-content-left-side-container
 {
     float: left;
@@ -85,9 +91,16 @@ html, body
     height: 100%;
     margin: 0 auto;
     float: left;
-    background-image: url(/images/minified_1024/black_white_shoes04_min1024.jpg);
+    overflow: hidden;
+    /*background-image: url(/images/minified_1024/black_white_shoes04_min1024.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center;*/
+}
+
+#middle-content-middle-container img
+{
+    width: 100%;
+    height: auto;
 }
 
 #middle-content-right-side-container

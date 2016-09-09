@@ -26,13 +26,18 @@ html, body {
     transform: translate(-50%,-50%);*/ }
 
 /* line 43, Z:/Sites/web designs/fake_product02/scss/style.scss */
+#middle-content-container a {
+  list-style-type: none;
+  text-decoration: none; }
+
+/* line 49, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-left-side-container {
   float: left;
   width: 25%;
   height: 100%;
   background-color: #F0F0F0; }
 
-/* line 51, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 57, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-left-side-container p {
   display: flex;
   align-items: center;
@@ -41,7 +46,7 @@ html, body {
   line-height: 17.5vh;
   color: #0F0F0F; }
 
-/* line 61, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 67, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-middle-container-h1-black h1 {
   position: absolute;
   font-size: 10vh;
@@ -50,7 +55,7 @@ html, body {
   margin: auto;
   color: #0F0F0F; }
 
-/* line 71, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 77, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-middle-container-h1-white h1 {
   position: absolute;
   font-size: 10vh;
@@ -59,25 +64,31 @@ html, body {
   margin: auto;
   color: #F0F0F0; }
 
-/* line 81, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 87, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-middle-container {
   position: relative;
   width: 50%;
   height: 100%;
   margin: 0 auto;
   float: left;
-  background-image: url(/images/minified_1024/black_white_shoes04_min1024.jpg);
-  background-size: cover;
-  background-position: center; }
+  overflow: hidden;
+  /*background-image: url(/images/minified_1024/black_white_shoes04_min1024.jpg);
+    background-size: cover;
+    background-position: center;*/ }
 
-/* line 93, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 100, Z:/Sites/web designs/fake_product02/scss/style.scss */
+#middle-content-middle-container img {
+  width: 100%;
+  height: auto; }
+
+/* line 106, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-right-side-container {
   float: left;
   width: 25%;
   height: 100%;
   background-color: #0F0F0F; }
 
-/* line 101, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 114, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-right-side-container p {
   display: flex;
   align-items: center;
@@ -86,21 +97,21 @@ html, body {
   line-height: 17.5vh;
   color: #F0F0F0; }
 
-/* line 111, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 124, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-gallery-container-top {
   z-index: 1;
   width: 100%;
   height: 33.3%;
   background-color: #0F0F0F; }
 
-/* line 119, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 132, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .full-screen-image-container {
   width: 100vw;
   height: auto;
   margin: auto;
   display: none; }
 
-/* line 127, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 140, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .image-clip-container {
   display: block;
   width: 50%;
@@ -110,12 +121,12 @@ html, body {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   margin-left: -25%; }
 
-/* line 138, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 151, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .image-clip-container img {
   max-width: 100%;
   height: auto; }
 
-/* line 144, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 157, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-gallery-container-bot {
   z-index: 1;
   width: 100%;
@@ -124,7 +135,7 @@ html, body {
   position: absolute;
   bottom: 0; }
 
-/* line 154, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 167, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-clip-rightend {
   display: block;
   position: absolute;
@@ -134,13 +145,13 @@ html, body {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   right: -12.5%; }
 
-/* line 165, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 178, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-clip-rightend img {
   width: auto;
   max-height: 100%;
   margin: auto; }
 
-/* line 172, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 185, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-clip-rightend-bot {
   display: block;
   position: absolute;
@@ -151,31 +162,31 @@ html, body {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   right: -12.5%; }
 
-/* line 184, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 197, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-clip-rightend-bot img {
   width: auto;
   max-height: 100%;
   margin: auto; }
 
-/* line 191, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 204, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #body-shop {
   background: linear-gradient(to right, #F0F0F0 0%, #F0F0F0 50%, #0F0F0F 50%, #0F0F0F 100%);
   overflow-y: auto;
   width: 100vw; }
 
-/* line 198, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 211, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #content-container-shop {
   width: 100vw;
   height: auto; }
 
-/* line 204, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 217, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #title-container {
   position: relative;
   height: 25vh;
   width: 100vw;
   margin: auto; }
 
-/* line 212, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 225, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #content-shop-title-absolute-left {
   width: 50vw;
   height: 25vh;
@@ -183,12 +194,12 @@ html, body {
   position: absolute;
   top: 0; }
 
-/* line 221, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 234, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #content-shop-title-absolute-left h1 {
   font-size: 10vh;
   color: #0F0F0F; }
 
-/* line 227, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 240, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #content-shop-title-absolute-right {
   width: 50vw;
   height: 25vh;
@@ -197,38 +208,38 @@ html, body {
   position: absolute;
   top: 0; }
 
-/* line 237, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 250, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #content-shop-title-absolute-right h1 {
   font-size: 10vh;
   color: #F0F0F0; }
 
-/* line 243, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 256, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .content-shop-image-gallery-black {
   position: relative;
   background-color: #0F0F0F;
   float: left; }
 
-/* line 250, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 263, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .content-shop-image-gallery-black-right {
   position: relative;
   background-color: #0F0F0F;
   float: right;
   margin-right: -17px; }
 
-/* line 258, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 271, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .content-shop-image-gallery-white {
   position: relative;
   background-color: #F0F0F0;
   float: right;
   margin-right: -17px; }
 
-/* line 266, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 279, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .content-shop-image-gallery-white-left {
   position: relative;
   background-color: #F0F0F0;
   float: left; }
 
-/* line 273, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 286, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-gallery-container {
   width: 45vw;
   height: 25vw;
@@ -236,7 +247,7 @@ html, body {
   overflow: hidden;
   padding: 2.5vw; }
 
-/* line 282, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 295, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-text-white {
   text-align: left;
   width: 35vw;
@@ -246,7 +257,7 @@ html, body {
   color: #F0F0F0;
   float: left; }
 
-/* line 293, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 306, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-text-black {
   text-align: left;
   width: 35vw;
@@ -256,14 +267,14 @@ html, body {
   color: #0F0F0F;
   float: left; }
 
-/* line 304, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 317, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-icons-container {
   width: auto;
   height: auto;
   float: right;
   margin-right: 2.5vw; }
 
-/* line 312, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 325, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-icons-medium-cart-white {
   width: 64px;
   height: 64px;
@@ -271,7 +282,7 @@ html, body {
   background-position: 0px 0px;
   background-repeat: no-repeat; }
 
-/* line 321, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 334, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-icons-medium-heart-white {
   width: 64px;
   height: 64px;
@@ -279,11 +290,11 @@ html, body {
   background-position: 0px 0px;
   background-repeat: no-repeat; }
 
-/* line 330, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 343, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-icons-medium-heart-white:active {
   background-position: 0px -128px; }
 
-/* line 335, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 348, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-icons-medium-cart-black {
   width: 64px;
   height: 64px;
@@ -291,7 +302,7 @@ html, body {
   background-position: 0px -64px;
   background-repeat: no-repeat; }
 
-/* line 344, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 357, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-icons-medium-heart-black {
   width: 64px;
   height: 64px;
@@ -299,18 +310,18 @@ html, body {
   background-position: 0px -64px;
   background-repeat: no-repeat; }
 
-/* line 353, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 366, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-icons-medium-heart-black:active {
   background-position: 0px -192px; }
 
-/* line 358, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 371, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-gallery-container img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto; }
 
-/* line 366, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 379, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #contact-body {
   background: linear-gradient(#F0F0F0 0%, #F0F0F0 50%, #0F0F0F 50%, #0F0F0F 100%);
   overflow: hidden;
@@ -318,27 +329,27 @@ html, body {
   height: 100vh;
   margin: 0 auto; }
 
-/* line 375, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 388, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #contact-title-black {
   position: absolute;
   width: 100vw;
   height: 50vh; }
 
-/* line 382, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 395, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #contact-title-black h1 {
   text-align: center;
   font-size: 10vh;
   margin: auto;
   margin-top: 15vh; }
 
-/* line 390, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 403, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #contact-info-white {
   position: absolute;
   margin-top: 50vh;
   width: 100vw;
   height: 50vh; }
 
-/* line 398, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 411, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .contact-info-container {
   position: relative;
   width: 33.3vw;
@@ -348,7 +359,7 @@ html, body {
   font-size: 5vh;
   color: #F0F0F0; }
 
-/* line 409, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 422, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #contact-info-phone {
   width: 128px;
   height: 128px;
@@ -358,7 +369,7 @@ html, body {
   margin: auto;
   margin-top: 2.5vh; }
 
-/* line 420, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 433, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #contact-info-mail {
   width: 128px;
   height: 128px;
@@ -368,7 +379,7 @@ html, body {
   margin: auto;
   margin-top: 2.5vh; }
 
-/* line 431, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 444, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #contact-info-twitter {
   width: 128px;
   height: 128px;
@@ -378,7 +389,7 @@ html, body {
   margin: auto;
   margin-top: 2.5vh; }
 
-/* line 442, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 455, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .home-button-container {
   position: relative;
   width: 128px;
@@ -388,82 +399,82 @@ html, body {
   list-style-type: none; }
 
 @media screen and (max-width: 1080px) {
-  /* line 454, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 467, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .full-screen-image-container {
     display: block; }
-  /* line 459, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 472, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .image-clip-container {
     display: none; }
-  /* line 464, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 477, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #image-clip-rightend {
     display: none; }
-  /* line 469, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 482, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #image-clip-rightend-bot {
     display: none; }
-  /* line 474, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 487, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #middle-content-container p {
     font-size: 5vh;
     line-height: 22.5vh; }
-  /* line 480, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 493, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #middle-content-middle-container-h1-black h1 {
     font-size: 4vh; }
-  /* line 485, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 498, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #middle-content-middle-container-h1-white h1 {
     font-size: 4vh; }
-  /* line 490, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 503, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-text-white {
     width: 30vw;
     margin-top: -1vh;
     font-size: 1vh; }
-  /* line 497, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 510, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-text-black {
     width: 30vw;
     margin-top: -1vh;
     font-size: 1vh; }
-  /* line 504, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 517, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-icons-medium-cart-white {
     width: 32px;
     height: 32px;
     background-image: url("/images/icons/spritesheet_shopcartIcon_32.png"); }
-  /* line 511, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 524, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-icons-medium-heart-white {
     width: 32px;
     height: 32px;
     background-image: url("/images/icons/spritesheet_heartIcon_32.png"); }
-  /* line 518, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 531, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-icons-medium-cart-black {
     width: 32px;
     height: 32px;
     background-image: url("/images/icons/spritesheet_shopcartIcon_32.png");
     background-position: 0px -32px; }
-  /* line 526, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 539, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-icons-medium-heart-black {
     width: 32px;
     height: 32px;
     background-image: url("/images/icons/spritesheet_heartIcon_32.png");
     background-position: 0px -32px; }
-  /* line 534, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 547, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .content-shop-image-gallery-white {
     margin-right: -17px; }
-  /* line 539, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 552, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .content-shop-image-gallery-black {
     margin-right: -17px; }
-  /* line 544, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 557, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .contact-info-container {
     font-size: 2.5vh; }
-  /* line 549, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 562, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #contact-info-phone {
     width: 64px;
     height: 64px;
     background-image: url("/images/icons/spritesheet_heartIcon_64.png");
     background-position: 0px 0px; }
-  /* line 557, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 570, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #contact-info-mail {
     width: 64px;
     height: 64px;
     background-image: url("/images/icons/spritesheet_heartIcon_64.png");
     background-position: 0px -128px; }
-  /* line 565, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 578, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #contact-info-twitter {
     width: 64px;
     height: 64px;
