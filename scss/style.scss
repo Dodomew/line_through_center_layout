@@ -439,6 +439,16 @@ html, body
     margin-top: 2.5vh
 }
 
+.home-button-container
+{
+    position: relative;
+    width: 128px;
+    height: 128px;
+    float: right;
+    margin-right: 2.5vw;
+    list-style-type: none;
+}
+
 @media screen and (max-width: 1080px)
 {
     .full-screen-image-container
@@ -519,6 +529,16 @@ html, body
         height: 32px;
         background-image: url("/images/icons/spritesheet_heartIcon_32.png");
         background-position: 0px -32px;
+    }
+    
+    .content-shop-image-gallery-white
+    {
+        margin-right: -17px;
+    }
+    
+    .content-shop-image-gallery-black
+    {
+        margin-right: -17px;
     }
     
     .contact-info-container
