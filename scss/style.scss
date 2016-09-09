@@ -92,15 +92,9 @@ html, body
     margin: 0 auto;
     float: left;
     overflow: hidden;
-    /*background-image: url(/images/minified_1024/black_white_shoes04_min1024.jpg);
+    background-image: url(../images/minified_1024/black_white_shoes04_min1024.jpg);
     background-size: cover;
-    background-position: center;*/
-}
-
-#middle-content-middle-container img
-{
-    width: 100%;
-    height: auto;
+    background-position: center;
 }
 
 #middle-content-right-side-container
@@ -273,7 +267,6 @@ html, body
     position: relative;
     background-color: $primary-color; 
     float: right;
-    margin-right: -17px;
 }
 
 .content-shop-image-gallery-white-left
@@ -326,7 +319,7 @@ html, body
 {
     width: 64px;
     height: 64px;
-    background-image: url("/images/icons/spritesheet_shopcartIcon_64.png");
+    background-image: url("../images/icons/spritesheet_shopcartIcon_64.png");
     background-position: 0px 0px;
     background-repeat: no-repeat;
 }
@@ -335,7 +328,7 @@ html, body
 {
     width: 64px;
     height: 64px;
-    background-image: url("/images/icons/spritesheet_heartIcon_64.png");
+    background-image: url("../images/icons/spritesheet_heartIcon_64.png");
     background-position: 0px 0px;
     background-repeat: no-repeat;
 }
@@ -349,7 +342,7 @@ html, body
 {
     width: 64px;
     height: 64px;
-    background-image: url("/images/icons/spritesheet_shopcartIcon_64.png");
+    background-image: url("../images/icons/spritesheet_shopcartIcon_64.png");
     background-position: 0px -64px;
     background-repeat: no-repeat;
 }
@@ -358,7 +351,7 @@ html, body
 {
     width: 64px;
     height: 64px;
-    background-image: url("/images/icons/spritesheet_heartIcon_64.png");
+    background-image: url("../images/icons/spritesheet_heartIcon_64.png");
     background-position: 0px -64px;
     background-repeat: no-repeat;
 }
@@ -423,7 +416,7 @@ html, body
 {
     width: 128px;
     height: 128px;
-    background-image: url("/images/icons/spritesheet_heartIcon_128.png");
+    background-image: url("../images/icons/spritesheet_heartIcon_128.png");
     background-position: 0px 0px;
     background-repeat: no-repeat;
     margin: auto;
@@ -434,7 +427,7 @@ html, body
 {
     width: 128px;
     height: 128px;
-    background-image: url("/images/icons/spritesheet_heartIcon_128.png");
+    background-image: url("../images/icons/spritesheet_heartIcon_128.png");
     background-position: 0px -256px;
     background-repeat: no-repeat;
     margin: auto;
@@ -445,7 +438,7 @@ html, body
 {
     width: 128px;
     height: 128px;
-    background-image: url("/images/icons/spritesheet_heartIcon_128.png");
+    background-image: url("../images/icons/spritesheet_heartIcon_128.png");
     background-position: 0px 0px;
     background-repeat: no-repeat;
     margin: auto;
@@ -518,21 +511,21 @@ html, body
     {
         width: 32px;
         height: 32px;
-        background-image: url("/images/icons/spritesheet_shopcartIcon_32.png");
+        background-image: url("../images/icons/spritesheet_shopcartIcon_32.png");
     }
 
     .shop-image-icons-medium-heart-white
     {
         width: 32px;
         height: 32px;
-        background-image: url("/images/icons/spritesheet_heartIcon_32.png");
+        background-image: url("../images/icons/spritesheet_heartIcon_32.png");
     }
 
     .shop-image-icons-medium-cart-black
     {
         width: 32px;
         height: 32px;
-        background-image: url("/images/icons/spritesheet_shopcartIcon_32.png");
+        background-image: url("../images/icons/spritesheet_shopcartIcon_32.png");
         background-position: 0px -32px;
     }
 
@@ -540,16 +533,16 @@ html, body
     {
         width: 32px;
         height: 32px;
-        background-image: url("/images/icons/spritesheet_heartIcon_32.png");
+        background-image: url("../images/icons/spritesheet_heartIcon_32.png");
         background-position: 0px -32px;
     }
     
-    .content-shop-image-gallery-white
+    .content-shop-image-gallery-white-left
     {
         margin-right: -17px;
     }
     
-    .content-shop-image-gallery-black
+    .content-shop-image-gallery-black-right
     {
         margin-right: -17px;
     }
@@ -563,7 +556,7 @@ html, body
     {
         width: 64px;
         height: 64px;
-        background-image: url("/images/icons/spritesheet_heartIcon_64.png");
+        background-image: url("../images/icons/spritesheet_heartIcon_64.png");
         background-position: 0px 0px;
     }
 
@@ -571,7 +564,7 @@ html, body
     {
         width: 64px;
         height: 64px;
-        background-image: url("/images/icons/spritesheet_heartIcon_64.png");
+        background-image: url("../images/icons/spritesheet_heartIcon_64.png");
         background-position: 0px -128px;
     }
 
@@ -579,7 +572,7 @@ html, body
     {
         width: 64px;
         height: 64px;
-        background-image: url("/images/icons/spritesheet_heartIcon_64.png");
+        background-image: url("../images/icons/spritesheet_heartIcon_64.png");
         background-position: 0px 0px;
     }
 }
