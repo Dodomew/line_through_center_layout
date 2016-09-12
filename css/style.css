@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 @import url(https://fonts.googleapis.com/css?family=Anton);
-/* line 15, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 28, Z:/Sites/web designs/fake_product02/scss/style.scss */
 html, body {
   width: 100vw;
   height: 100vh;
@@ -8,12 +8,12 @@ html, body {
   overflow: hidden;
   font-family: "Roboto", sans-serif; }
 
-/* line 24, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 37, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .content-container {
   width: 100%;
   height: 100%; }
 
-/* line 30, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 43, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-container {
   position: relative;
   z-index: 100;
@@ -25,20 +25,20 @@ html, body {
     left: 50%;
     transform: translate(-50%,-50%);*/ }
 
-/* line 43, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 56, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-container a {
   list-style-type: none;
   text-decoration: none; }
 
-/* line 49, Z:/Sites/web designs/fake_product02/scss/style.scss */
-#middle-content-left-side-container {
+/* line 62, Z:/Sites/web designs/fake_product02/scss/style.scss */
+#middle-content-left-side-container, #middle-content-right-side-container {
   float: left;
   width: 25%;
   height: 100%;
   background-color: #F0F0F0; }
 
-/* line 57, Z:/Sites/web designs/fake_product02/scss/style.scss */
-#middle-content-left-side-container p {
+/* line 70, Z:/Sites/web designs/fake_product02/scss/style.scss */
+#middle-content-left-side-container p, #middle-content-right-side-container p {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +46,7 @@ html, body {
   line-height: 17.5vh;
   color: #0F0F0F; }
 
-/* line 67, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 80, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-middle-container-h1-black h1 {
   position: absolute;
   font-size: 10vh;
@@ -55,7 +55,7 @@ html, body {
   margin: auto;
   color: #0F0F0F; }
 
-/* line 77, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 90, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-middle-container-h1-white h1 {
   position: absolute;
   font-size: 10vh;
@@ -64,7 +64,7 @@ html, body {
   margin: auto;
   color: #F0F0F0; }
 
-/* line 87, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 100, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-middle-container {
   position: relative;
   width: 50%;
@@ -76,14 +76,11 @@ html, body {
   background-size: cover;
   background-position: center; }
 
-/* line 100, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 113, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-right-side-container {
-  float: left;
-  width: 25%;
-  height: 100%;
   background-color: #0F0F0F; }
 
-/* line 108, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 119, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #middle-content-right-side-container p {
   display: flex;
   align-items: center;
@@ -92,21 +89,21 @@ html, body {
   line-height: 17.5vh;
   color: #F0F0F0; }
 
-/* line 118, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 129, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-gallery-container-top {
   z-index: 1;
   width: 100%;
   height: 33.3%;
   background-color: #0F0F0F; }
 
-/* line 126, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 137, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .full-screen-image-container {
   width: 100vw;
   height: auto;
   margin: auto;
   display: none; }
 
-/* line 134, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 145, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .image-clip-container {
   display: block;
   width: 50%;
@@ -116,12 +113,12 @@ html, body {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   margin-left: -25%; }
 
-/* line 145, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 156, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .image-clip-container img {
   max-width: 100%;
   height: auto; }
 
-/* line 151, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 162, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-gallery-container-bot {
   z-index: 1;
   width: 100%;
@@ -130,7 +127,7 @@ html, body {
   position: absolute;
   bottom: 0; }
 
-/* line 161, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 172, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-clip-rightend {
   display: block;
   position: absolute;
@@ -140,13 +137,13 @@ html, body {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   right: -1vw; }
 
-/* line 172, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 183, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-clip-rightend img {
   width: auto;
   max-height: 100%;
   margin: auto; }
 
-/* line 179, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 190, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-clip-rightend-bot {
   display: block;
   position: absolute;
@@ -156,82 +153,78 @@ html, body {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   right: -2.5vw; }
 
-/* line 190, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 201, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #image-clip-rightend-bot img {
   width: auto;
   max-height: 100%;
   margin: auto; }
 
-/* line 197, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 208, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #body-shop {
   background: linear-gradient(to right, #F0F0F0 0%, #F0F0F0 50%, #0F0F0F 50%, #0F0F0F 100%);
   overflow-y: auto;
   width: 100vw; }
 
-/* line 204, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 215, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #content-container-shop {
   width: 100vw;
   height: auto; }
 
-/* line 210, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 221, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #title-container {
   position: relative;
   height: 25vh;
   width: 100vw;
   margin: auto; }
 
-/* line 218, Z:/Sites/web designs/fake_product02/scss/style.scss */
-#content-shop-title-absolute-left {
+/* line 229, Z:/Sites/web designs/fake_product02/scss/style.scss */
+#content-shop-title-absolute-left, #content-shop-title-absolute-right {
   width: 50vw;
   height: 25vh;
   text-align: right;
   position: absolute;
   top: 0; }
 
-/* line 227, Z:/Sites/web designs/fake_product02/scss/style.scss */
-#content-shop-title-absolute-left h1 {
+/* line 238, Z:/Sites/web designs/fake_product02/scss/style.scss */
+#content-shop-title-absolute-left h1, #content-shop-title-absolute-right h1 {
   font-size: 10vh;
   color: #0F0F0F; }
 
-/* line 233, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 244, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #content-shop-title-absolute-right {
-  width: 50vw;
-  height: 25vh;
   margin-left: 50%;
-  text-align: left;
-  position: absolute;
-  top: 0; }
+  text-align: left; }
 
-/* line 243, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 251, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #content-shop-title-absolute-right h1 {
   font-size: 10vh;
   color: #F0F0F0; }
 
-/* line 249, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 257, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .content-shop-image-gallery-black {
   position: relative;
   background-color: #0F0F0F;
   float: left; }
 
-/* line 256, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 264, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .content-shop-image-gallery-black-right {
   position: relative;
   background-color: #0F0F0F;
   float: right; }
 
-/* line 263, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 271, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .content-shop-image-gallery-white {
   position: relative;
   background-color: #F0F0F0;
   float: right; }
 
-/* line 270, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 278, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .content-shop-image-gallery-white-left {
   position: relative;
   background-color: #F0F0F0;
   float: left; }
 
-/* line 277, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 285, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-gallery-container {
   width: 45vw;
   height: 25vw;
@@ -239,7 +232,7 @@ html, body {
   overflow: hidden;
   padding: 2.5vw; }
 
-/* line 286, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 294, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-text-white {
   text-align: left;
   width: 35vw;
@@ -249,7 +242,7 @@ html, body {
   color: #F0F0F0;
   float: left; }
 
-/* line 297, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 305, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-text-black {
   text-align: left;
   width: 35vw;
@@ -259,13 +252,13 @@ html, body {
   color: #0F0F0F;
   float: left; }
 
-/* line 308, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 316, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-icons-container {
   width: auto;
   height: auto;
   float: right; }
 
-/* line 315, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 323, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-icons-medium-cart-white {
   width: 64px;
   height: 64px;
@@ -275,7 +268,7 @@ html, body {
   background-size: auto;
   margin-right: 2.5vw; }
 
-/* line 326, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 334, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-icons-medium-heart-white {
   width: 64px;
   height: 64px;
@@ -284,11 +277,11 @@ html, body {
   background-repeat: no-repeat;
   margin-right: 2.5vw; }
 
-/* line 336, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 344, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-icons-medium-heart-white:active {
   background-position: 0px -128px; }
 
-/* line 341, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 349, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-icons-medium-cart-black {
   width: 64px;
   height: 64px;
@@ -297,7 +290,7 @@ html, body {
   background-repeat: no-repeat;
   margin-right: 2.5vw; }
 
-/* line 351, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 359, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-icons-medium-heart-black {
   width: 64px;
   height: 64px;
@@ -306,18 +299,18 @@ html, body {
   background-repeat: no-repeat;
   margin-right: 2.5vw; }
 
-/* line 361, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 369, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-icons-medium-heart-black:active {
   background-position: 0px -192px; }
 
-/* line 366, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 374, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .shop-image-gallery-container img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto; }
 
-/* line 374, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 382, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #contact-body {
   background: linear-gradient(#F0F0F0 0%, #F0F0F0 50%, #0F0F0F 50%, #0F0F0F 100%);
   overflow: hidden;
@@ -325,27 +318,27 @@ html, body {
   height: 100vh;
   margin: 0 auto; }
 
-/* line 383, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 391, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #contact-title-black {
   position: absolute;
   width: 100vw;
   height: 50vh; }
 
-/* line 390, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 398, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #contact-title-black h1 {
   text-align: center;
   font-size: 10vh;
   margin: auto;
   margin-top: 15vh; }
 
-/* line 398, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 406, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #contact-info-white {
   position: absolute;
   margin-top: 50vh;
   width: 100vw;
   height: 50vh; }
 
-/* line 406, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 414, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .contact-info-container {
   position: relative;
   width: 33.3vw;
@@ -353,12 +346,12 @@ html, body {
   float: left;
   text-align: center; }
 
-/* line 415, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 423, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #contact-info-white h4 {
   font-size: 5vh;
   color: #F0F0F0; }
 
-/* line 421, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 429, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #contact-info-phone {
   width: 128px;
   height: 128px;
@@ -368,7 +361,7 @@ html, body {
   margin: auto;
   margin-top: 10vh; }
 
-/* line 432, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 440, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #contact-info-mail {
   width: 128px;
   height: 128px;
@@ -378,7 +371,7 @@ html, body {
   margin: auto;
   margin-top: 10vh; }
 
-/* line 443, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 451, Z:/Sites/web designs/fake_product02/scss/style.scss */
 #contact-info-twitter {
   width: 128px;
   height: 128px;
@@ -388,7 +381,7 @@ html, body {
   margin: auto;
   margin-top: 10vh; }
 
-/* line 454, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 462, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .home-button-container {
   position: relative;
   width: 128px;
@@ -397,7 +390,7 @@ html, body {
   margin-right: 2.5vw;
   list-style-type: none; }
 
-/* line 464, Z:/Sites/web designs/fake_product02/scss/style.scss */
+/* line 472, Z:/Sites/web designs/fake_product02/scss/style.scss */
 .home-button-container a {
   position: absolute;
   background-image: url("../images/icons/icon_heart_128_blackNwhite.png");
@@ -407,75 +400,75 @@ html, body {
   height: 128px; }
 
 @media screen and (min-width: 1081px) and (max-width: 1706px) {
-  /* line 476, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 484, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-icons-medium-cart-white {
     width: 32px;
     height: 32px;
     background-image: url("../images/icons/spritesheet_shopcartIcon_32.png");
     background-position: 0px 0px;
     background-repeat: no-repeat; }
-  /* line 485, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 493, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-icons-medium-heart-white {
     width: 32px;
     height: 32px;
     background-image: url("../images/icons/spritesheet_heartIcon_32.png");
     background-position: 0px 0px;
     background-repeat: no-repeat; }
-  /* line 494, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 502, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-icons-medium-heart-white:active {
     background-position: 0px -64px; }
-  /* line 499, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 507, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-icons-medium-cart-black {
     width: 32px;
     height: 32px;
     background-image: url("../images/icons/spritesheet_shopcartIcon_32.png");
     background-position: 0px -32px;
     background-repeat: no-repeat; }
-  /* line 508, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 516, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-icons-medium-heart-black {
     width: 32px;
     height: 32px;
     background-image: url("../images/icons/spritesheet_heartIcon_32.png");
     background-position: 0px -32px;
     background-repeat: no-repeat; }
-  /* line 517, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 525, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-icons-medium-heart-black:active {
     background-position: 0px -96px; } }
 
 @media screen and (max-width: 1080px) {
-  /* line 526, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 534, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .full-screen-image-container {
     display: block; }
-  /* line 531, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 539, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .image-clip-container {
     display: none; }
-  /* line 536, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 544, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #image-clip-rightend {
     display: none; }
-  /* line 541, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 549, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #image-clip-rightend-bot {
     display: none; }
-  /* line 546, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 554, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #middle-content-container p {
     font-size: 5vh;
     line-height: 22.5vh; }
-  /* line 552, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 560, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #middle-content-middle-container-h1-black h1 {
     font-size: 4vh; }
-  /* line 557, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 565, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #middle-content-middle-container-h1-white h1 {
     font-size: 4vh; }
-  /* line 562, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 570, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-text-white {
     width: 30vw;
     margin-top: 0vh;
     font-size: 1.25vh; }
-  /* line 569, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 577, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-text-black {
     width: 30vw;
     margin-top: 0vh;
     font-size: 1.25vh; }
-  /* line 576, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 584, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-icons-medium-cart-white {
     width: 32px;
     height: 32px;
@@ -483,7 +476,7 @@ html, body {
     background-position: 0px 0px;
     margin-top: 2.5vh;
     margin-right: 10vw; }
-  /* line 586, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 594, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-icons-medium-heart-white {
     width: 32px;
     height: 32px;
@@ -491,7 +484,7 @@ html, body {
     background-position: 0px 0px;
     margin-top: 2.5vh;
     margin-right: 10vw; }
-  /* line 596, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 604, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-icons-medium-cart-black {
     width: 32px;
     height: 32px;
@@ -499,7 +492,7 @@ html, body {
     background-position: 0px -32px;
     margin-top: 2.5vh;
     margin-right: 10vw; }
-  /* line 606, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 614, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-icons-medium-heart-black {
     width: 32px;
     height: 32px;
@@ -507,59 +500,59 @@ html, body {
     background-position: 0px -32px;
     margin-top: 2.5vh;
     margin-right: 10vw; }
-  /* line 616, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 624, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .content-shop-image-gallery-black {
     width: 100vw;
     height: auto;
     margin: auto; }
-  /* line 623, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 631, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .content-shop-image-gallery-black-right {
     width: 100vw;
     height: auto;
     margin: auto; }
-  /* line 630, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 638, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .content-shop-image-gallery-white {
     width: 100vw;
     height: auto;
     margin: auto; }
-  /* line 637, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 645, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .content-shop-image-gallery-white-left {
     width: 100vw;
     height: auto;
     margin: auto; }
-  /* line 644, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 652, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .shop-image-gallery-container {
     width: 95vw;
     height: 33vh; }
-  /* line 650, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 658, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #contact-info-phone {
     width: 64px;
     height: 64px;
     background-image: url("../images/icons/spritesheet_heartIcon_64.png");
     background-position: 0px 0px;
     margin-top: 17.5vh; }
-  /* line 659, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 667, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #contact-info-mail {
     width: 64px;
     height: 64px;
     background-image: url("../images/icons/spritesheet_heartIcon_64.png");
     background-position: 0px 0px;
     margin-top: 17.5vh; }
-  /* line 668, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 676, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #contact-info-twitter {
     width: 64px;
     height: 64px;
     background-image: url("../images/icons/spritesheet_heartIcon_64.png");
     background-position: 0px 0px;
     margin-top: 17.5vh; }
-  /* line 677, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 685, Z:/Sites/web designs/fake_product02/scss/style.scss */
   #contact-info-white h4 {
     font-size: 2vh; }
-  /* line 682, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 690, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .home-button-container {
     width: 64px;
     height: 64px; }
-  /* line 688, Z:/Sites/web designs/fake_product02/scss/style.scss */
+  /* line 696, Z:/Sites/web designs/fake_product02/scss/style.scss */
   .home-button-container a {
     background-image: url("../images/icons/icon_heart_64_blackNwhite.png");
     width: 64px;

@@ -12,6 +12,57 @@ $primary-color-accent: #567;
 $secondary-color: #0F0F0F;
 $secondary-color-accent: #789;
 
+//mixins
+@mixin content-shop-image-gallery-left()
+{
+    position: relative; 
+    float: left;
+}
+
+@mixin content-shop-image-gallery-right()
+{
+    position: relative; 
+    float: right;
+}
+
+@mixin shop-image-icons-desktop($icon-size)
+{
+    width: $icon-size;
+    height: $icon-size;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-right: 2.5vw;
+}
+
+@mixin shop-image-icons-mobile($icon-size)
+{
+    width: $icon-size;
+    height: $icon-size;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-top: 2.5vh;
+    margin-right: 10vw;
+}
+
+@mixin contact-icons($icon-size)
+{
+    width: $icon-size;
+    height: $icon-size;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+@mixin contact-icons-mobile($icon-size)
+{
+    width: $icon-size;
+    height: $icon-size;
+    background-repeat: no-repeat;
+    margin-top: 17.5vh;
+}
+
+//styling
+
 html, body
 {
     width: 100vw;
@@ -99,9 +150,7 @@ html, body
 
 #middle-content-right-side-container
 {
-    float: left;
-    width: 25%;
-    height: 100%;
+    @extend #middle-content-left-side-container;
     background-color: $secondary-color;
 }
 
@@ -232,12 +281,9 @@ html, body
 
 #content-shop-title-absolute-right
 {
-    width: 50vw;
-    height: 25vh;
+    @extend #content-shop-title-absolute-left;
     margin-left: 50%;
     text-align: left;
-    position: absolute;
-    top: 0;
 }
 
 #content-shop-title-absolute-right h1
@@ -248,30 +294,26 @@ html, body
 
 .content-shop-image-gallery-black
 {
-    position: relative;
+    @include @mixin content-shop-image-gallery-left();
     background-color: $secondary-color;  
-    float: left;
 }
 
 .content-shop-image-gallery-black-right
 {
-    position: relative;
+    @mixin content-shop-image-gallery-right()
     background-color: $secondary-color;  
-    float: right;
 }
 
 .content-shop-image-gallery-white
 {
-    position: relative;
+    @mixin content-shop-image-gallery-right()
     background-color: $primary-color; 
-    float: right;
 }
 
 .content-shop-image-gallery-white-left
 {
-    position: relative;
+    @include @mixin content-shop-image-gallery-left();
     background-color: $primary-color; 
-    float: left;
 }
 
 .shop-image-gallery-container
@@ -314,23 +356,16 @@ html, body
 
 .shop-image-icons-medium-cart-white
 {
-    width: 64px;
-    height: 64px;
+    @include @mixin shop-image-icons-desktop(64px);
     background-image: url("../images/icons/spritesheet_shopcartIcon_64.png");
     background-position: 0px 0px;
-    background-repeat: no-repeat;
-    background-size: auto;
-    margin-right: 2.5vw;
 }
 
 .shop-image-icons-medium-heart-white
 {
-    width: 64px;
-    height: 64px;
+    @include @mixin shop-image-icons-desktop(64px);
     background-image: url("../images/icons/spritesheet_heartIcon_64.png");
     background-position: 0px 0px;
-    background-repeat: no-repeat;
-    margin-right: 2.5vw;
 }
 
 .shop-image-icons-medium-heart-white:active
@@ -340,22 +375,16 @@ html, body
 
 .shop-image-icons-medium-cart-black
 {
-    width: 64px;
-    height: 64px;
+    @include @mixin shop-image-icons-desktop(64px);
     background-image: url("../images/icons/spritesheet_shopcartIcon_64.png");
     background-position: 0px -64px;
-    background-repeat: no-repeat;
-    margin-right: 2.5vw;
 }
 
 .shop-image-icons-medium-heart-black
 {
-    width: 64px;
-    height: 64px;
+    @include @mixin shop-image-icons-desktop(64px);
     background-image: url("../images/icons/spritesheet_heartIcon_64.png");
     background-position: 0px -64px;
-    background-repeat: no-repeat;
-    margin-right: 2.5vw;
 }
 
 .shop-image-icons-medium-heart-black:active
@@ -373,11 +402,8 @@ html, body
 
 #contact-body
 {
+    @extend html
     background: linear-gradient($primary-color 0%, $primary-color 50%, $secondary-color 50%, $secondary-color 100%);
-    overflow: hidden;
-    width: 100vw;
-    height: 100vh;
-    margin: 0 auto;
 }
 
 #contact-title-black
@@ -397,10 +423,8 @@ html, body
 
 #contact-info-white
 {
-    position: absolute;
+    @extend #contact-title-black;
     margin-top: 50vh;
-    width: 100vw;
-    height: 50vh;
 }
 
 .contact-info-container
@@ -420,35 +444,23 @@ html, body
 
 #contact-info-phone
 {
-    width: 128px;
-    height: 128px;
+    @mixin contact-icons(128px);
     background-image: url("../images/icons/spritesheet_heartIcon_128.png");
     background-position: 0px 0px;
-    background-repeat: no-repeat;
-    margin: auto;
-    margin-top: 10vh
 }
 
 #contact-info-mail
 {
-    width: 128px;
-    height: 128px;
+    @mixin contact-icons(128px)
     background-image: url("../images/icons/spritesheet_heartIcon_128.png");
     background-position: 0px -256px;
-    background-repeat: no-repeat;
-    margin: auto;
-    margin-top: 10vh
 }
 
 #contact-info-twitter
 {
-    width: 128px;
-    height: 128px;
+    @mixin contact-icons(128px)
     background-image: url("../images/icons/spritesheet_heartIcon_128.png");
     background-position: 0px 0px;
-    background-repeat: no-repeat;
-    margin: auto;
-    margin-top: 10vh
 }
 
 .home-button-container
@@ -475,20 +487,16 @@ html, body
 {
     .shop-image-icons-medium-cart-white
     {
-        width: 32px;
-        height: 32px;
-        background-image: url("../images/icons/spritesheet_shopcartIcon_32.png");
+        @include @mixin shop-image-icons(32px);
+        background-image: url("../images/icons/spritesheet_shopcartIcon_64.png");
         background-position: 0px 0px;
-        background-repeat: no-repeat;
     }
 
     .shop-image-icons-medium-heart-white
     {
-        width: 32px;
-        height: 32px;
+        @include @mixin shop-image-icons(32px);
         background-image: url("../images/icons/spritesheet_heartIcon_32.png");
         background-position: 0px 0px;
-        background-repeat: no-repeat;
     }
 
     .shop-image-icons-medium-heart-white:active
@@ -498,20 +506,16 @@ html, body
 
     .shop-image-icons-medium-cart-black
     {
-        width: 32px;
-        height: 32px;
+        @include @mixin shop-image-icons(32px);
         background-image: url("../images/icons/spritesheet_shopcartIcon_32.png");
         background-position: 0px -32px;
-        background-repeat: no-repeat;
     }
 
     .shop-image-icons-medium-heart-black
     {
-        width: 32px;
-        height: 32px;
+        @include @mixin shop-image-icons(32px);
         background-image: url("../images/icons/spritesheet_heartIcon_32.png");
         background-position: 0px -32px;
-        background-repeat: no-repeat;
     }
     
     .shop-image-icons-medium-heart-black:active
@@ -575,42 +579,31 @@ html, body
     
     .shop-image-icons-medium-cart-white
     {
-        width: 32px;
-        height: 32px;
+        @mixin shop-image-icons-mobile($icon-size)
         background-image: url("../images/icons/spritesheet_shopcartIcon_32.png");
         background-position: 0px 0px;
-        margin-top: 2.5vh;
-        margin-right: 10vw;
     }
 
     .shop-image-icons-medium-heart-white
     {
-        width: 32px;
-        height: 32px;
+        @mixin shop-image-icons-mobile($icon-size)
         background-image: url("../images/icons/spritesheet_heartIcon_32.png");
         background-position: 0px 0px;
-        margin-top: 2.5vh;
-        margin-right: 10vw;
+
     }
 
     .shop-image-icons-medium-cart-black
     {
-        width: 32px;
-        height: 32px;
+        @mixin shop-image-icons-mobile($icon-size)
         background-image: url("../images/icons/spritesheet_shopcartIcon_32.png");
         background-position: 0px -32px;
-        margin-top: 2.5vh;
-        margin-right: 10vw;
     }
 
     .shop-image-icons-medium-heart-black
     {
-        width: 32px;
-        height: 32px;
+        @mixin shop-image-icons-mobile($icon-size)
         background-image: url("../images/icons/spritesheet_heartIcon_32.png");
         background-position: 0px -32px;
-        margin-top: 2.5vh;
-        margin-right: 10vw;
     }
     
     .content-shop-image-gallery-black
@@ -622,23 +615,17 @@ html, body
     
     .content-shop-image-gallery-black-right
     {
-        width: 100vw;
-        height: auto;
-        margin: auto;
+        @extend .content-shop-image-gallery-black;
     }
 
     .content-shop-image-gallery-white
     {
-        width: 100vw;
-        height: auto;
-        margin: auto;
+        @extend .content-shop-image-gallery-black;
     }
 
     .content-shop-image-gallery-white-left
     {
-        width: 100vw;
-        height: auto;
-        margin: auto;
+        @extend .content-shop-image-gallery-black;
     }
         
     .shop-image-gallery-container
@@ -649,29 +636,23 @@ html, body
     
     #contact-info-phone
     {
-        width: 64px;
-        height: 64px;
+        @mixin contact-icons-mobile(64px);
         background-image: url("../images/icons/spritesheet_heartIcon_64.png");
         background-position: 0px 0px;
-        margin-top: 17.5vh;
     }
 
     #contact-info-mail
     {
-        width: 64px;
-        height: 64px;
+        @mixin contact-icons-mobile(64px);
         background-image: url("../images/icons/spritesheet_heartIcon_64.png");
         background-position: 0px 0px;
-        margin-top: 17.5vh;
     }
 
     #contact-info-twitter
     {
-        width: 64px;
-        height: 64px;
+        @mixin contact-icons-mobile(64px);
         background-image: url("../images/icons/spritesheet_heartIcon_64.png");
         background-position: 0px 0px;
-        margin-top: 17.5vh;
     }
     
     #contact-info-white h4
