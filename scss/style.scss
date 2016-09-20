@@ -8,9 +8,7 @@ $font-head: 'Anton', sans-serif;
 
 //variables
 $primary-color: #F0F0F0;
-$primary-color-accent: #567; 
 $secondary-color: #0F0F0F;
-$secondary-color-accent: #789;
 
 //mixins
 @mixin content-shop-image-gallery-left()
@@ -61,6 +59,13 @@ $secondary-color-accent: #789;
     margin-top: 17.5vh;
 }
 
+@mixin #middle-content-middle-container-text-h1
+{
+    position: absolute;
+    font-size: 10vh;
+    margin: auto;
+}
+
 //styling
 
 html, body
@@ -85,10 +90,6 @@ html, body
     height: 34%;
     width: 100%;
     font-family: $font-head;
-    /*position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);*/
 }
 
 #middle-content-container a
@@ -117,21 +118,17 @@ html, body
 
 #middle-content-middle-container-h1-black h1
 {
-    position: absolute;
-    font-size: 10vh;
+    @include #middle-content-middle-container-text-h1;
     left: 10px;
     top: 0px;
-    margin: auto;
     color: $secondary-color;
 }
 
 #middle-content-middle-container-h1-white h1
 {
-    position: absolute;
-    font-size: 10vh;
+    @include #middle-content-middle-container-text-h1;
     right: 10px;
     bottom: 0px;
-    margin: auto;
     color: $primary-color;
 }
 
@@ -193,8 +190,8 @@ html, body
 
 .image-clip-container img
 {
-        max-width: 100%;
-        height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 #image-gallery-container-bot
@@ -338,13 +335,8 @@ html, body
 
 .shop-image-text-black
 {
-    text-align: left;
-    width: 35vw;
-    height: auto;
-    margin-top: -2.5vh;
-    margin-left: 2.5vw;
+    @extend shop-image-text-white;
     color: $secondary-color;
-    float: left;
 }
 
 .shop-image-icons-container
